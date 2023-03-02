@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  /* font-family: calibri, Arial, Helvetica, sans-serif !important; */
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; 
+    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(211, 248, 248);
+
+/* Show it is fixed to the top */
+/* min-height: 46rem;*/
+padding-top: 3.6rem; 
+}
+
+.mouse-over:hover{
+  cursor: pointer;
+}
+
+.vh-80{
+  min-height:80vh;
+  }
+
+.contact-img{  
+  border-radius: 5%;
+  max-width: 110px;
+  max-height: 110px;
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.page-wrap {
+  min-height: 90.5%;
+  /* equal to footer height */
+  margin-bottom: -40px;
+  padding-bottom:40px;
+}
+  .page-wrap:after {
+      content: "";
+      display: block;
+  }
+  .site-footer, .page-wrap:after {
+      height: 20px;
+  }
+
+ 
+footer{
+  background-color:rgb(139, 3, 3);
+  color: white;
+  min-height: 40px;       
+  vertical-align: auto;      
+}
+footer .container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem;
+}
+
+.header-icon-color{
+  color: #efb9b9; 
+  font-size: 25px;   
+}
+nav {
+  background-color: #830404;  
+}
+ .navbar{
+  padding:20px;
+}
+
+/* Start of Registration form validation css */
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.2rem;
+  background: rgb(247, 90, 90);
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/*End of Registration form validation css*/
+
+/* Enrollment form */
+.enromment-form{
+  background-color: rgb(118, 2, 20);
+  color: #fff;
+  padding: 5px;
+}
+
+/* End of Enrollment form */
+
+/* Checkbox format */
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+.checked-item,
+.not-checked-item {
+  margin-left: 10px;
+}
+.checked-item {
+  color: green;
+  
+}
+/*End of Checkbox form validation css*/
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 641px) {
+  footer {
+      background: #ee1f1f;        
+      min-height: 60px;           
+  }
+  .page-wrap {
+      width: auto;          
+      min-height: 86vh;      
+      margin: 1px auto 20px auto;
+  }
+  .nav-link-authenticate{
+      margin-top: 10px; 
+  }
+  .sign-out-icon{
+     margin: 200px !important;
+     
+  } 
+
+ }
+
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 1rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 20;
+  line-height: 3.2rem;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 1rem;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+
+}
+
+
+
