@@ -46,7 +46,6 @@ function App() {
             <Route path={'/user/grades'} element={<Grades/>} />
           </Route>
 
-
          {/* wrap persistent route to admin module to refresh user if app is refreshed */}
           <Route element={<RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />}>            
             <Route path={'/admin/users'} element={<Users />} />            

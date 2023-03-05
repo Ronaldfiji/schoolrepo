@@ -2,7 +2,7 @@ import { Outlet, Navigate, useLocation } from "react-router-dom";
 import { useState, useEffect, Fragment } from "react";
 import useRefreshToken from '../hook/useRefreshToken';
 import useAuth from '../hook/useAuth';
-
+import useLogout from "../hook/useLogout";
 
 const PersistLogin = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -10,8 +10,10 @@ const PersistLogin = () => {
     const { auth } = useAuth();
     const [sleepTime] = useState(500);
     const location = useLocation();
+    let logout = useLogout();
 
-    useEffect(() => {
+    useEffect(() => {        
+
         console.log("Persist login fired .............................");
         let isMounted = true;
         const verifyRefreshToken = async () => {

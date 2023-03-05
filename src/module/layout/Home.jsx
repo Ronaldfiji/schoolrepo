@@ -86,32 +86,90 @@ let Home = () => {
 
                
                 <div className="container marketing">
+                    
+                    <div className="album py-2 bg-light">
+                        <div className="containerXX">
+                            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                <div className="col">
+                                    <div className="card shadow-sm">
+                                        {/* <svg className="bd-placeholder-img card-img-top" width="100%" height="225" 
+                                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
+                                         preserveAspectRatio="xMidYMid slice" focusable="false">
+                                            <title>Placeholder</title>
+                                         <rect width="100%" height="100%" fill="#55595c"  >
+                                         <img src={require('../../assets/siteimg/home/center/BaseImg.png')} alt="centerImages" />
+                                         </rect>
+                                         <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                                         </svg> */}
+                                         <img src={require('../../assets/siteimg/home/center/BaseImg.png')} alt="centerImages" 
+                                         className="bd-placeholder-img card-img-top" width="100%" height="225"
+                                         />
 
-                    <div className="row">
-                        <div className="col-lg-4">
-                        
-                             <img className="bd-placeholder-img rounded-circle mb-1" width="140" height="140"
-                             src={require('../../assets/siteimg/home/mangement/MyselfV2.jpg')} alt='img not found'/>   
-                          
-                            <h4>CEO & Founder</h4>
-                            <p>Ronald is CEO and Founder for Voice Fiji. It was started back in April 2023 with vision to reach unreached around globe to trasform lifes with message of joy and hope.</p>
-                            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
-                        </div>
-                        <div className="col-lg-4">
-                            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                                        <div className="card-body">
+                                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div className="btn-group">
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">More Info</button>
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">!</button>
+                                                </div>
+                                                <small className="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="card shadow-sm">
+                                        <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-                            <h2>Heading</h2>
-                            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
-                        </div>
-                        <div className="col-lg-4">
-                            <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#dc143c" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                                        <div className="card-body">
+                                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div className="btn-group">
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                                </div>
+                                                <small className="text-muted">9 mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="card shadow-sm">
+                                        {/* <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> */}
 
-                            <h2>Heading</h2>
-                            <p>And lastly this, the third column of representative placeholder content.</p>
-                            <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+                                       
+                                        
+                                         <div className="card-body">
+                                         <iframe width="100%" height="337" src="https://www.youtube.com/embed/JRaakIL-N_s" title="Fiji Vacation Travel Guide | Expedia" 
+                                        frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowFullScreen={true}
+                                        className="bd-placeholder-img card-img-top" ></iframe>
+
+                                            {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div className="btn-group">
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                                                    <button type="button" className="btn btn-sm btn-outline-secondary">Edit</button>
+                                                </div>
+                                                <small className="text-muted">9 mins</small>
+                                            </div> */}
+                                        </div> 
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -137,23 +195,31 @@ let Home = () => {
                             Some great placeholder content for the first featurette here. 
                             Imagine some exciting prose here.
                             
-                            Some great placeholder content for the first featurette here. 
-                            Imagine some exciting prose here.
-                            
-                            Some great placeholder content for the first featurette here. 
-                            Imagine some exciting prose here.
-                            
-                            Some great placeholder content for the first featurette here. 
-                            Imagine some exciting prose here.
-                            
-                            Some great placeholder content for the first featurette here. 
-                            Imagine some exciting prose here.
 
                             </p>
                         </div>
                         <div className="col-md-5">
-                            <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+                             {/* <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                             width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" 
+                             aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" 
+                             focusable="false"><title>
+                               Test 
+                             </title>
+                             <rect width="100%" height="100%" fill="#eee" />
+                             <text x="50%" y="50%" fill="#aaa" dy=".3em"></text>                             
+                             </svg>  */}
+                             <div className="card shadow-sm ">
+                             <video 
+                                controls
+                                loop
+                                autoPlay={false}
+                                muted={false}
+                                preload="metadata"
+                                poster={require('../../assets/siteimg/home/Clips/farm.jpg')}
+                                src={require('../../assets/siteimg/home/Clips/Nursery.mp4')}
+                               >                                    
+                                </video>
+                             </div> 
                         </div>
                     </div>
 
@@ -165,8 +231,19 @@ let Home = () => {
                             <p className="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
                         </div>
                         <div className="col-md-5 order-md-1">
-                            <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+                            {/* <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> */}
+                            <div className="card shadow-sm ">
+                             <video 
+                                controls
+                                loop
+                                autoPlay={false}
+                                muted={false}
+                                preload="metadata"
+                                poster={require('../../assets/siteimg/home/Clips/phoneball.jpg')}
+                                src={require('../../assets/siteimg/home/Clips/phoneball.mp4')}
+                               >                                    
+                                </video>
+                             </div> 
                         </div>
                     </div>
 

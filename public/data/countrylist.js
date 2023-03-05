@@ -254,3 +254,31 @@ function getCountries() {
 
 	return countryList;
 }
+
+
+/*window.addEventListener("beforeunload", function (e) {
+	console.log("Function exe from country list .js")
+	var confirmationMessage = "\o/";
+    localStorage.setItem('isReloaded', true);
+	(e || window.event).returnValue = confirmationMessage; //Gecko + IE
+	//alert('ok');
+	return confirmationMessage;                            //Webkit, Safari, Chrome
+  });*/
+
+//   function codeAddress() {
+// 	alert('ok');
+// }
+
+{/* <script>
+  window.onload = function() {
+  console.log("Loading app............................")        
+};  
+</script>  */}
+
+/*window.onbeforeunload = function(event) {
+	alert("Sure to close browser");
+   console.log("Browser closed.....................");
+   //if you return anything but null, it will warn the user.
+   //optionally you can return a string which most browsers show to the user as the warning message.
+   return true;
+}*/

@@ -85,24 +85,7 @@ return (
               <li className="nav-item">
                 <a className="nav-link disabled" href="#" aria-disabled="true">Disabled</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                 Admin
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">                 
-                  <li>
-                  <Link to="/admin/users" className="dropdown-item">User Manager</Link>  
-                  </li>  
-
-                  <li><a className="dropdown-item" href="#">Products</a></li>
-                  <li><a className="dropdown-item" href="#">Maintenance</a></li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <Link to='/aboutus' className="nav-link" >About Us</Link>
-              </li>
-
+              
             <li className="nav-item dropdownV2 ">
               <a className="nav-link dropLink" href="#"  id="navbarDropdownMenuLink2" aria-expanded="false">
                 Enrollment   <i className="fa fa-caret-down fa-xs"></i>
@@ -110,10 +93,27 @@ return (
                <div className="dropdown-content">
                
                <Link to='/user/enrollment' className="nav-link" >Enroll</Link>
-                <a className="dropdown-item1" href="#">Products</a>
-                <a className="dropdown-item1" href="#">Maintenance</a>
+                <a className="dropdown-item1" href="#">Withdraw</a>
+                <a className="dropdown-item1" href="#">Results</a>
               </div> 
             </li>
+
+            <li className="nav-item dropdownV2">                
+                <a className="nav-link dropLink" href="#"  id="navbarDropdownMenuLink" aria-expanded="false">
+                Admin  <i className="fa fa-caret-down fa-xs"></i>
+               </a> 
+               <div className="dropdown-content">               
+               <Link to='/admin/users' className="nav-link" >User Manager</Link>
+                <a className="nav-link" href="#">Stage 1</a>
+                <a className="dropdown-item" href="#">Stage 2</a>
+                <a className="dropdown-item" href="#">Stage 3</a>
+              </div> 
+              </li>
+
+
+            <li className="nav-item">
+                <Link to='/aboutus' className="nav-link" >About Us</Link>
+              </li>
             
             </ul>          
 

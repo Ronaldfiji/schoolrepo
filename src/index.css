@@ -170,7 +170,7 @@ code {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -225,6 +225,11 @@ code {
   letter-spacing: -.05rem;
 }
 
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

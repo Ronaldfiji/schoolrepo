@@ -169,7 +169,7 @@ let littleSleep = async (milliseconds) => {
                                            <td>{grade?.AssName}</td>
                                            <td>{grade?.AssWeight}</td>
                                            <td>{grade?.AssGrade}</td>
-                                           <td>{grade?.AssDate}</td>
+                                           <td>{grade?.AssDate ?format((new Date(grade?.AssDate)), "dd-MM-yyyy"): ""}</td>
                                            <td>{grade?.AssessedBy}</td>
                                            <td>{grade?.SubjectCode}</td>
                                            <td>{grade?.Subject}</td>
