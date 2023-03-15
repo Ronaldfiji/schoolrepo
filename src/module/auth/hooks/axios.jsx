@@ -7,7 +7,7 @@ const baseUrl = `https://localhost/api/user`;
 // });
 
 
-export const axiosPrivate = axios.create({
+export const axiosPrivateTest = axios.create({
     baseURL: baseUrl,
     headers: { 'Content-Type': 'application/json' },
     //withCredentials: true,

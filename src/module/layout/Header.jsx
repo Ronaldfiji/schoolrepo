@@ -60,7 +60,7 @@ return (
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
+          <div className="collapse navbar-collapse " id="navbarCollapse">
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
               <li className="nav-item">
                 {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
@@ -93,6 +93,7 @@ return (
                <div className="dropdown-content">
                
                <Link to='/user/enrollment' className="nav-link" >Enroll</Link>
+               <Link to='/admin/course/courses' className="nav-link" >Courses</Link>               
                 <a className="dropdown-item1" href="#">Withdraw</a>
                 <a className="dropdown-item1" href="#">Results</a>
               </div> 
@@ -109,14 +110,10 @@ return (
                 <a className="dropdown-item" href="#">Stage 3</a>
               </div> 
               </li>
-
-
             <li className="nav-item">
                 <Link to='/aboutus' className="nav-link" >About Us</Link>
-              </li>
-            
-            </ul>          
-
+              </li>            
+            </ul>
             <form className="d-flex">
               <input className="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-danger btn-sm me-2 text-light " type="submit">Search</button>
@@ -130,25 +127,21 @@ return (
                   <i className="fa fa-sign-out fa-sm  text-white  m-2 mouse-over me-5" onClick={signOff} ></i>                   
                   </span>
                   : <Link to="user/login" className="btn btn-light btn-sm  me-1 text-danger">Login</Link>    
-              }           
-              
-               {/* <Link to="auth/register" className="btn btn-primary btn-sm  me-1 " onClick={logoutUser}>Logout</Link>  */}
-            
+              }              
+               {/* <Link to="auth/register" className="btn btn-primary btn-sm  me-1 " onClick={logoutUser}>Logout</Link>  */}            
             </div>
-
-
           </div>
         </div>
       </nav>
-
     <section>
       {( IsLoading) ? <Spinner /> : ''}
       <ToastContainer position={"top-right"} pouseOnHover={true} draggable={true} theme="colored"
         icon={<i className="fa fa-info-circle fa-sm text-danger" aria-hidden="true"></i>} />
-    </section>
-    
+    </section>    
     </Fragment>
   );
 };
+
+
 
 export default Header;

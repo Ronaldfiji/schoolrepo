@@ -18,6 +18,7 @@ import Users from './module/admin/component/users/User';
 import EditUser from './module/admin/component/users/Edituser';
 import Enrollment  from './module/school/component/Enrollment';
 import Grades from './module/school/component/Grades';
+import Courses from './module/admin/component/course/Courses';
 
 const ROLES = {
   'User': 'User',
@@ -44,12 +45,14 @@ function App() {
             <Route path={'/user/profile'} element={<Profile />} />
             <Route path={'/user/enrollment'} element={<Enrollment/>} />
             <Route path={'/user/grades'} element={<Grades/>} />
+            <Route path={"/admin/course/courses"} element={<Courses />} />   
           </Route>
 
          {/* wrap persistent route to admin module to refresh user if app is refreshed */}
           <Route element={<RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />}>            
             <Route path={'/admin/users'} element={<Users />} />            
-            <Route path={"/admin/user/edit/:userid"} element={<EditUser />} />   
+            <Route path={"/admin/user/edit/:userid"} element={<EditUser />} />
+            
           </Route>
 
           {/* catch all */}

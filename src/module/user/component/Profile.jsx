@@ -6,6 +6,7 @@ import Spinner from "../../../shared/component/Spinner";
 import { ToastContainer, toast } from 'react-toastify';
 import EditProfile from "./EditProfile";
 import Course from "./Course";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
 
@@ -198,27 +199,47 @@ const CloseEditDialogue = async (editStatus) => {
                           </span>
                         </div>
                       </div>
-
-             
-
-
           </div>
-          <div className="col-md-4">
-            {
-              user?.userPictures?.length > 0 ?
-                user?.userPictures[0]?.path ?
-                  <div className="col">
-                    <img src={`https://localhost/${user?.userPictures[0]?.path}`} alt="Responsive image"
-                      className="img-thumbnail  img-fluid img-responsive" style={{ maxHeight: "250px" }} />
-                  </div>
+          <div className="col-md-4 mt-2">
+            <div className="card shadow">
+
+              {
+                user?.userPictures?.length > 0 ?
+                  user?.userPictures[0]?.path ?
+                    <div className="col">
+                      <img src={`https://localhost/${user?.userPictures[0]?.path}`} alt="Responsive image"
+                        className="img-thumbnail  img-fluid img-responsive card-img-top" style={{ maxHeight: "340px" }} />
+                    </div>
+                    : ""
                   : ""
-                : ""
-            }             
-            <Course/>
+              }
+            </div>            
           </div>
         </div>
         : ""
       }
+
+      <section>
+      
+        <div className="row d-flex justify-content-center align-items-center">
+          <div className="col-md-4">
+            <div className="row g-3 align-items-center">
+              <div className="col-auto">
+                <Course />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 ">
+            <div className="d-flex aligns-items-center justify-content-center ms-5" >
+              <Link to='/user/enrollment' className="btn btn-danger btn-sm "> Enroll into new course</Link>
+            </div>
+          </div>
+        </div>
+              
+
+
+
+      </section>
 
       <div className="row">
         <div className="col">

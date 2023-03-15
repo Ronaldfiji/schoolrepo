@@ -54,7 +54,7 @@ const Enrollment = (props) => {
         }));
        
         } catch (err) {
-          setErrMsg("Failed to get enrollment and course data, check api: " + err);
+          setErrMsg("Failed to users course data, check api: " + err);
         }
         finally {
           setIsLoading(false);
@@ -79,7 +79,7 @@ useEffect(() =>{
         setErrMsg('');
         try { 
          
-          const courseResponse = await axios.get(`/course/getcourses?pagesize=${apiDataRequestPageSize}`, {
+          const courseResponse = await axiosPrivate.get(`/course/getcourses?pagesize=${apiDataRequestPageSize}`, {
             signal: controller.signal
           });
           const schoolResponse = await axios.get(`/school/getschools?pagesize=${apiDataRequestPageSize}`, {
@@ -98,7 +98,7 @@ useEffect(() =>{
             }     
           
         } catch (err) {
-          setErrMsg("Failed to get enrollment and course data, check api: " + err);
+          setErrMsg("Failed to get school and course data, check api: " + err);
         }
         finally {
           setIsLoading(false);
@@ -176,8 +176,7 @@ let littleSleep = async (milliseconds) => {
 
   return (
     <Fragment>
-      <pre>{JSON.stringify(enroll)}</pre>
-      <pre>{JSON.stringify(userCourse)}</pre>
+     
         <ToastContainer position={"top-right"} pouseOnHover={true} draggable={true} theme="colored"
         icon={<i className="fa fa-info-circle fa-sm text-danger" aria-hidden="true"></i>} />
       <section className="pt-1">
@@ -308,6 +307,8 @@ let littleSleep = async (milliseconds) => {
          </section>
 
           <section>
+          <div className="row ">
+                  <div className="col-md-10">
               <form onSubmit={SubmitEnrollment} className="enromment-form mt-2 p-2" >
                   <div className='row'>
                       <div className='col'>
@@ -351,6 +352,8 @@ let littleSleep = async (milliseconds) => {
                       <input type="submit" className='btn btn-danger btn-sm' value="Enroll now" />
                   </div>
               </form>
+              </div>
+              </div>
           </section>
          
     </Fragment>
